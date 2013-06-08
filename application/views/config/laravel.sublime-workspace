@@ -1,0 +1,902 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"array_key",
+				"array_key_exists"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"dataF",
+				"dataFileName"
+			],
+			[
+				"debug",
+				"debugPrintln"
+			],
+			[
+				"Bar",
+				"BarometricPressure"
+			],
+			[
+				"Ba",
+				"BarometricPressure"
+			],
+			[
+				"numwri",
+				"numwrite"
+			],
+			[
+				"STD",
+				"stdin"
+			],
+			[
+				"LCD",
+				"LCD_CLEAR"
+			],
+			[
+				"def",
+				"define"
+			],
+			[
+				"uint",
+				"uint64_t"
+			],
+			[
+				"prin",
+				"printf	printf …"
+			],
+			[
+				"ne",
+				"newlines"
+			],
+			[
+				"glo",
+				"globuff"
+			],
+			[
+				"usb",
+				"usb162"
+			],
+			[
+				"byt",
+				"byte_ptr"
+			],
+			[
+				"num",
+				"numERR"
+			],
+			[
+				"MODE_",
+				"MODE_INPUT"
+			],
+			[
+				"PUPD_",
+				"PUPD_NONE"
+			],
+			[
+				"orig",
+				"originalUrl"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/var/www/laravel/application/controllers/config.php",
+			"settings":
+			{
+				"buffer_size": 532,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "customize.blade.php",
+			"settings":
+			{
+				"buffer_size": 81,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.blade.php",
+			"settings":
+			{
+				"buffer_size": 1865,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 538 files for \"horizontal_open\"\n\n/var/www/laravel/application/views/config/index.blade.php:\n    5  \n    6  <?php\n    7: echo Form::horizontal_open();\n    8  \n    9  echo Form::control_group(\n\n/var/www/laravel/bundles/bootstrapper/src/Bootstrapper/ButtonGroup.php:\n   50  \n   51      /**\n   52:      * Alias for open so both horizontal_open and open can be used.\n   53       *\n   54       * @param boolean $toggle     Whether the button group should be togglable\n   ..\n   57       * @return string An opening <div> tag\n   58       */\n   59:     public static function horizontal_open($toggle = null, $attributes = array())\n   60      {\n   61          return static::open($toggle, $attributes);\n\n/var/www/laravel/bundles/bootstrapper/src/Bootstrapper/Form.php:\n  276       * @return string\n  277       */\n  278:     public static function horizontal_open($action = null, $method = 'POST', $attributes = array(), $https = null)\n  279      {\n  280          $attributes = Helpers::add_class($attributes, Form::TYPE_HORIZONTAL);\n  ...\n  292       * @return string\n  293       */\n  294:     public static function horizontal_open_secure($action = null, $method = 'POST', $attributes = array())\n  295      {\n  296:         return static::horizontal_open($action, $method, $attributes, true);\n  297      }\n  298  \n  ...\n  307       * @return string\n  308       */\n  309:     public static function horizontal_open_for_files($action = null, $method = 'POST', $attributes = array(), $https = null)\n  310      {\n  311          $attributes['enctype'] = 'multipart/form-data';\n  312  \n  313:         return static::horizontal_open($action, $method, $attributes, $https);\n  314      }\n  315  \n  ...\n  323       * @return string\n  324       */\n  325:     public static function horizontal_open_secure_for_files($action = null, $method = 'POST', $attributes = array())\n  326      {\n  327:         return static::horizontal_open_for_files($action, $method, $attributes, true);\n  328      }\n  329  \n\n/var/www/laravel/bundles/bootstrapper/tests/ButtonGroup.test.php:\n   35    public function testHorizontalOpenCheckbox()\n   36    {\n   37:     $open = ButtonGroup::horizontal_open('checkbox', $this->testAttributes);\n   38  \n   39      $equals = ButtonGroup::open('checkbox', $this->testAttributes);\n\n/var/www/laravel/bundles/bootstrapper/tests/Form.test.php:\n   41                  ),\n   42              array(\n   43:                 'horizontal_open',\n   44                  '<form class=\"foo form-horizontal\" data-foo=\"bar\" method=\"POST\" action=\"http://test/login\" accept-charset=\"UTF-8\">'\n   45                  ),\n   46              array(\n   47:                 'horizontal_open_secure',\n   48                  '<form class=\"foo form-horizontal\" data-foo=\"bar\" method=\"POST\" action=\"https://test/login\" accept-charset=\"UTF-8\">'\n   49                  ),\n   50              array(\n   51:                 'horizontal_open_for_files',\n   52                  '<form class=\"foo form-horizontal\" data-foo=\"bar\" enctype=\"multipart/form-data\" method=\"POST\" action=\"http://test/login\" accept-charset=\"UTF-8\">'\n   53                  ),\n   54              array(\n   55:                 'horizontal_open_secure_for_files',\n   56                  '<form class=\"foo form-horizontal\" data-foo=\"bar\" enctype=\"multipart/form-data\" method=\"POST\" action=\"https://test/login\" accept-charset=\"UTF-8\">'\n   57                  ),\n\n/var/www/laravel/storage/views/7f1856bd93263f8a9774cb6987736c85:\n    4  \n    5  <?php\n    6: echo Form::horizontal_open();\n    7  \n    8  echo Form::control_group(\n\n16 matches across 6 files\n",
+			"settings":
+			{
+				"buffer_size": 3595,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/var/www/laravel/bundles/bootstrapper/src/Bootstrapper/Form.php",
+			"settings":
+			{
+				"buffer_size": 24312,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/C++/C++.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"del",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"pcip",
+				"Package Control: Install Package"
+			],
+			[
+				"dele",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"ssc",
+				"Set Syntax: C"
+			],
+			[
+				"de",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"ssa",
+				"Set Syntax: Arduino"
+			],
+			[
+				"mar",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"ard",
+				"Set Syntax: Arduino"
+			],
+			[
+				"delet",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"trai",
+				"Trailing Spaces: Toggle Trailing Spaces"
+			],
+			[
+				"tra",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"trail",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"ssma",
+				"Set Syntax: Makefile"
+			],
+			[
+				"ssmak",
+				"Set Syntax: Makefile"
+			],
+			[
+				"ssar",
+				"Set Syntax: Arduino"
+			],
+			[
+				"ssan",
+				"Set Syntax: Arduino"
+			],
+			[
+				"ssard",
+				"Set Syntax: Arduino"
+			],
+			[
+				"mark",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"pclp",
+				"Package Control: List Packages"
+			],
+			[
+				"pcrm",
+				"Package Control: Remove Package"
+			],
+			[
+				"ssmake",
+				"Set Syntax: Makefile"
+			],
+			[
+				"sspy",
+				"Set Syntax: Python"
+			],
+			[
+				"ma",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"make",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"m",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"pc",
+				"Package Control: List Packages"
+			],
+			[
+				"pcep",
+				"Package Control: Enable Package"
+			],
+			[
+				"pcdp",
+				"Package Control: Disable Package"
+			],
+			[
+				"pcd",
+				"Package Control: Disable Package"
+			],
+			[
+				"ssmar",
+				"Set Syntax: Markdown"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 153.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/var/www/laravel/application/config/app.php",
+		"/var/www/laravel/application/views/layouts/nav.blade.php",
+		"/var/www/laravel/application/views/config/index.blade.php",
+		"/var/www/laravel/application/routes.php",
+		"/var/www/laravel/application/views/home/index.blade.php",
+		"/var/www/laravel/application/controllers/home.php",
+		"/var/www/laravel/application/views/home/test.blade.php",
+		"/var/www/laravel/application/views/home/login.blade.php",
+		"/var/www/laravel/application/views/layouts/hero.blade.php",
+		"/var/www/laravel/application/views/home/tlogin.blade.php",
+		"/var/www/laravel/bundles/bootstrapper/src/start.php",
+		"/var/www/laravel/laravel/database/query.php",
+		"/var/www/laravel/application/config/application.php",
+		"/var/www/laravel/application/bundles.php",
+		"/home/techplex/ece331/project2_temp_data_grapher/grapher.php",
+		"/home/techplex/Desktop/c/Lab7_score/lab11.repeat.c",
+		"/home/techplex/Desktop/c/Lab7_score/lab11.tx.c",
+		"/home/techplex/ece331/hw11/daemon/Makefile",
+		"/home/techplex/ece331/hw11/daemon/i2cdaemon.c",
+		"/home/techplex/ece331/hw11/hw11",
+		"/home/techplex/ece331/hw11/calendar/form.php",
+		"/home/techplex/ece331/hw11/i2cd",
+		"/home/techplex/ece331/hw11/i2cd.sh",
+		"/home/techplex/ece331/hw11/Makefile",
+		"/home/techplex/ece331/hw11/i2cdaemon.c",
+		"/home/techplex/ece331/km/gpio/test/fork/multiple.c",
+		"/home/techplex/ece331/km/gpio/modgpio.c",
+		"/home/techplex/ece331/km/gpio/modgpio.h",
+		"/home/techplex/ece331/km/gpio/client/gpioclient.c",
+		"/home/techplex/Downloads/HABweek.kml",
+		"/home/techplex/.config/sublime-text-2/Packages/User/SFTP.errors.log",
+		"/home/techplex/ece331/km/gpio/test/multiple.c",
+		"/home/techplex/Desktop/c/Lab7_score/lab9.c",
+		"/home/techplex/Desktop/test/udiv_64.c",
+		"/home/techplex/ece331/km/gpio/wiringPi/wiringPi/wiringPi.c",
+		"/home/techplex/ece331/km/gpio/test/fork/makefile",
+		"/home/techplex/ece331/hw9/encoder/input",
+		"/home/techplex/ece331/hw9/encoder/encoder.c",
+		"/home/techplex/ece331/hw9/decoder/decoder.c",
+		"/home/techplex/ece331/hw9/encoder/Makefile",
+		"/home/techplex/ece331/hw9/decoder/Makefile",
+		"/home/techplex/ece331/hw9/hw9",
+		"/home/techplex/ece331/km/gpio/Makefile",
+		"/home/techplex/ece331/sftp-config.json",
+		"/home/techplex/ece331/km/gpio/systimercore.c",
+		"/home/techplex/ece331/km/gpio/wiringPi/gpio/gpio.c",
+		"/home/techplex/Desktop/test/Makefile",
+		"/home/techplex/ece331/notes/4_2_13.md",
+		"/home/techplex/Desktop/c/Lab7_score/lab8.c",
+		"/home/techplex/.cache/.fr-AAvfIb/hw3_test/main.c",
+		"/home/techplex/Desktop/test/OBJS = test.o",
+		"/home/techplex/Dropbox/ece331/km/systimer/ll/Makefile",
+		"/home/techplex/Dropbox/ece331/km/systimer/ll/ll.c",
+		"/home/techplex/Dropbox/ece331/km/systimer/ll/dt",
+		"/home/techplex/Dropbox/ece331/notes/DayXX,md",
+		"/home/techplex/ece331/hw6/delayTest.c",
+		"/home/techplex/ece331/hw6/usleepTest.c",
+		"/home/techplex/ece331/km/systimer/systimer.c",
+		"/home/techplex/ece331/km/systimer/ll.c",
+		"/home/techplex/ece331/notes/DayXX,md",
+		"/home/techplex/ece331/km/systimer/client/client.c",
+		"/tmp/fz3temp-1/usleepTest.c",
+		"/home/techplex/ece331/ece331.sublime-project",
+		"/home/techplex/ece331/hw6/Makefile",
+		"/home/techplex/ece331/hw6/graphData.py",
+		"/home/techplex/ece331/notes/python/scope2numpy.py",
+		"/home/techplex/ece331/km/systimer/client/Makefile",
+		"/tmp/fz3temp-1/systimer.c",
+		"/home/techplex/ece331/km/kernel-module-test/systimer.c",
+		"/home/techplex/Dropbox/ece331/km/systimer/.tmp_versions/systimer.mod",
+		"/home/techplex/ece331/km/makefile",
+		"/home/techplex/Dropbox/ece331/hw5/Makefile",
+		"/home/techplex/Dropbox/ece331/hw5/processSpeeds.py",
+		"/home/techplex/Dropbox/ece331/hw5/hw.java",
+		"/home/techplex/Dropbox/ece331/hw5/systimer.c",
+		"/home/techplex/Dropbox/ece331/hw5/readspeed.c",
+		"/home/techplex/Dropbox/ece331/hw5/hw5.md",
+		"/home/techplex/Dropbox/ece331/notes/enscript.md",
+		"/home/techplex/Dropbox/ece331/hw5/test.py",
+		"/home/techplex/Dropbox/ece331/notes/Day07.md",
+		"/home/techplex/Dropbox/ece331/notes/Day8.md",
+		"/home/techplex/Dropbox/ece331/notes/Day09.md",
+		"/home/techplex/Dropbox/ece331/notes/Day9.md",
+		"/home/techplex/Dropbox/ece331/hw4/passwd.3.py",
+		"/home/techplex/Dropbox/ece331/hw3/hw3.md",
+		"/home/techplex/Dropbox/ece331/hw3/random.7.py",
+		"/home/techplex/Dropbox/ece331/hw3/metar.hw3.py",
+		"/home/techplex/Dropbox/ece331/notes/python/basic_io.py",
+		"/home/techplex/Dropbox/ece331/hw1/mset.c",
+		"/home/techplex/Dropbox/ece331/hw5/systimer.h",
+		"/home/techplex/Dropbox/ece331/hw5/processSpeeds.6.py",
+		"/home/techplex/Dropbox/ece331/hw2/time.hw2_6.h",
+		"/home/techplex/Dropbox/ece331/hw4/pipes.6.c",
+		"/home/techplex/Dropbox/ece331/hw2/time.hw2_6.c",
+		"/home/techplex/Dropbox/ece331/hw1/hw1.md.html",
+		"/home/techplex/Dropbox/ece331/notes/Day05.md",
+		"/home/techplex/Dropbox/ece331/notes/TestTopics.md",
+		"/home/techplex/Dropbox/ece271/lab5/Project/main.s",
+		"/home/techplex/Dropbox/ece271/lab5/Project/old.s",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/libs/RTCDS1307/examples/example.ino",
+		"/home/techplex/Dropbox/UMHAB/trackuino/nick/led_blink_code.example",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/libs/BMP085/README.md",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/libs/RTCDS1307/README.md",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/libs/RTCDS1307/RTCDS1307.cpp",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/libs/RTCDS1307/RTCDS1307.h",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/libs/RTCDS1307/example.ino",
+		"/home/techplex/Dropbox/UMHAB/Project/realtimeclock.example",
+		"/home/techplex/Dropbox/UMHAB/Project/main.ino",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/RTC/leftovers.rtc.example",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/libs/BMP085/BMP085.cpp",
+		"/home/techplex/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/main_b.ino",
+		"/home/techplex/.cache/.fr-DHadT2/rtc-demo.c",
+		"/home/techplex/Dropbox/UMHAB/trackuino/nick/Temp_Sensor.ino.example",
+		"/home/techplex/Dropbox/UMHAB/arduino.mk",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/adxl/Makefile",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/adxl/ADXL362_SimpleRead.ino",
+		"/media/79E2-C714/DATALOG.TXT",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/err",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/temp",
+		"/home/techplex/.cache/.fr-i71AxR/Morse/examples/SOS/SOS.pde",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/lib_BMP085/Makefile",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/bmp/example.ino",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/bmp/BMP085.h",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/bmp/BMP085.cpp",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/BMP085.cpp",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/BMP085.h",
+		"/home/techplex/Dropbox/UMHAB/Project/Blake/bmp/Makefile"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/var/www/laravel",
+			"/home/techplex/Dropbox/plextex/pt/app/models",
+			"/home/techplex/Dropbox/ece331",
+			"/home/techplex/Dropbox/UMHAB/Project/Blake/libs/RTCDS1307",
+			"/home/techplex/Dropbox/UMHAB/trackuino/trackuino-firmware-1.4/trackuino",
+			"/home/techplex/avr"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"horizontal_open",
+			"inputEmail",
+			"use Laravel\\Paginator;",
+			"paginator",
+			"count",
+			".0$",
+			"\\s0.",
+			"0.",
+			"\\s0.",
+			"padding",
+			"x_",
+			"values",
+			"column_width",
+			"$step",
+			"xmin",
+			"$max",
+			"$i",
+			"ech",
+			"echi",
+			"print",
+			"exp",
+			"@",
+			"para",
+			"g:",
+			"((\\d+),\\s//pin)",
+			",",
+			", ",
+			",",
+			"pinToGpio",
+			"SYSTIMER_IOC_MAGIC",
+			"systimer_mode",
+			"st_lld->",
+			"st_lock",
+			"st_mjr",
+			"st_cls",
+			"rpisystimer_mcleanup",
+			"rpisystimer_minit",
+			"st_cls",
+			"systimer_mode",
+			"root",
+			"st_irqhandler",
+			"register",
+			"pinmode",
+			"i",
+			" ",
+			"IRQ_TIMEsR3",
+			"IRQ_TIMER3",
+			"st_open",
+			"printk",
+			"//",
+			"\n\n\n\n",
+			"\n\n\n",
+			"\n\n",
+			"\n",
+			"//",
+			"SYSTIMER_MOD_DESCR",
+			"st_wq",
+			"systimer_mode",
+			"sint",
+			"  ",
+			"datay",
+			"datax",
+			"plt.s",
+			", ",
+			"numpy",
+			", ",
+			"exit",
+			"outputWriter",
+			"outfilename",
+			"data",
+			"perror",
+			"done",
+			"perror",
+			"r1",
+			"RCC_AHBENR_GPOPBEN",
+			"<<14",
+			"12",
+			"(r7*2)",
+			"FILE_NAME",
+			"TM_FMT_TIME",
+			",",
+			"string",
+			"string(\":\")",
+			"string(\"0\")",
+			"Serial.print",
+			"DATE_",
+			"DATE",
+			"Wire.read",
+			"Wire.write",
+			"I2C_WRITE",
+			"setDateDs1307",
+			"CLOCK_ADDR",
+			"DS1307_I2C_ADDRESS",
+			"clockAddress",
+			"zero",
+			"clockAddress",
+			"zero",
+			"test",
+			"second",
+			"setDateDs1307",
+			"libraries",
+			"LIBRARIES",
+			"sketch",
+			"libraries",
+			"LIBRARIES",
+			"libraries",
+			"LIBRARIES",
+			"libraries",
+			"LIBRARIES",
+			"lib",
+			"SOURCES",
+			"OBJECTS",
+			"bmp",
+			"lib_bmp",
+			"addprefix",
+			"SOURCES",
+			"ARDUINODIR",
+			"Serial.p",
+			"Serial.print",
+			"BMP085::",
+			"<<<<<<<",
+			"bp",
+			"bmp085",
+			"BMP085",
+			"bmp085",
+			"BMP085",
+			"bmp085",
+			"BMP085"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".0.0",
+			"\\t",
+			"\\t\\t0.",
+			"$1 $2",
+			", \\n",
+			"I2C_WRITE",
+			"DS1307_I2C_ADDRESS",
+			"CLOCK_ADDR",
+			"ZERO",
+			"Wire.read",
+			"Wire.write",
+			"Wire.read",
+			"BMP085::",
+			"_delay_ms",
+			"_delay_us",
+			"LCD"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/var/www/laravel/application/controllers/config.php",
+					"settings":
+					{
+						"buffer_size": 532,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								276,
+								276
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "customize.blade.php",
+					"settings":
+					{
+						"buffer_size": 81,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								81,
+								81
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.blade.php",
+					"settings":
+					{
+						"buffer_size": 1865,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								86,
+								86
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"settings":
+					{
+						"buffer_size": 3595,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										141,
+										156
+									],
+									[
+										334,
+										349
+									],
+									[
+										577,
+										592
+									],
+									[
+										847,
+										862
+									],
+									[
+										1117,
+										1132
+									],
+									[
+										1240,
+										1255
+									],
+									[
+										1399,
+										1414
+									],
+									[
+										1611,
+										1626
+									],
+									[
+										1772,
+										1787
+									],
+									[
+										1905,
+										1920
+									],
+									[
+										2154,
+										2169
+									],
+									[
+										2425,
+										2440
+									],
+									[
+										2658,
+										2673
+									],
+									[
+										2899,
+										2914
+									],
+									[
+										3172,
+										3187
+									],
+									[
+										3508,
+										3523
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								852,
+								852
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"incomplete_sync": null,
+							"output_tag": 1,
+							"remote_loading": false,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"synced": false,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/var/www/laravel/bundles/bootstrapper/src/Bootstrapper/Form.php",
+					"settings":
+					{
+						"buffer_size": 24312,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9422,
+								9422
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4919.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 316.0
+	},
+	"output.sftp":
+	{
+		"height": 190.0
+	},
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"scopep",
+				"notes/python/scope2numpy.py"
+			],
+			[
+				"sett",
+				"settings.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/techplex/ece331/hw3/umhab.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 234.0,
+	"status_bar_visible": true
+}

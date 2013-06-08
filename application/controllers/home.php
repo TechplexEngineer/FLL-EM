@@ -32,7 +32,26 @@ class Home_Controller extends Base_Controller {
 
 	public function action_index()
 	{
-		return View::make('home.index');
+		return View::make('home.index')
+		->with('title', '')
+		->with('desc', '')
+		->with('author', '');
+	}
+
+	public function action_test()
+	{
+		return View::make('home.test')
+		->with('title', '')
+		->with('desc', '')
+		->with('author', '');
+	}
+
+	public function action_login()
+	{
+		return View::make('home.login')
+		->with('title', 'Sign in &middot; '.Config::get('app.name'))
+		->with('desc', '')
+		->with('author', '');
 	}
 
 }
