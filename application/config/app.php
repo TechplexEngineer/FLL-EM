@@ -1,5 +1,8 @@
 <?php
 
+//NOTE: the keys in this file MUST be lowercase
+
+
 return array(
 
 	/*
@@ -37,12 +40,12 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| loginAction
+	| author
 	|--------------------------------------------------------------------------
 	|
-	| 
+	| used to fill the meta tag on each page
 	|
 	*/
+	'author' =>  'Blake Bourque & Ryan Foley',
 
-	'loginAction' => '/',
 );

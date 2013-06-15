@@ -5,7 +5,7 @@
     <title>{{ $title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ $desc }}">
-    <meta name="author" content="{{ $author }}">
+    <meta name="author" content="{{ Config::get('app.author'); }}">
 
     <!-- Le styles -->
     @yield('style-before')

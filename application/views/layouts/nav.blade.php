@@ -1,3 +1,4 @@
+{{-- This file contains the navigation structure for the page --}}
 <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
@@ -9,9 +10,10 @@
       <a class="brand" href="{{ URL::base() }}" title="{{ Config::get('app.tagline'); }}">{{ Config::get('app.name'); }}</a>
       <div class="nav-collapse collapse">
         <ul class="nav">
-          <li class="active"><a href="#">Home</a></li>
-          <!-- <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="{{ URL::to('about'); }}">About</a></li>
+          <li><a href="{{ URL::to('contact'); }}">Contact</a></li>
+          <!-- 
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -23,12 +25,14 @@
               <li><a href="#">Separated link</a></li>
               <li><a href="#">One more separated link</a></li>
             </ul>
-          </li> -->
+          </li> 
+        -->
         </ul>
-        <form class="navbar-form pull-right" method="POST" action="{{ Config::get('app.loginAction'); }}">
+        <form class="navbar-form pull-right" method="POST" action="{{ URL::to('login'); }}">
           <input class="span2" type="text" placeholder="Email">
           <input class="span2" type="password" placeholder="Password">
           <button type="submit" class="btn">Sign in</button>
+          <a class="btn" href="">Register</a>
         </form>
       </div><!--/.nav-collapse -->
     </div>

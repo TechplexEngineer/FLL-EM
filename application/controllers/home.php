@@ -33,25 +33,22 @@ class Home_Controller extends Base_Controller {
 	public function action_index()
 	{
 		return View::make('home.index')
-		->with('title', '')
-		->with('desc', '')
-		->with('author', '');
+		->with('title', 'Maine FIRST Lego League Event Manager')
+		->with('desc', 'A tool to help cordinators of Maine FIRST events run the competitions.');
 	}
 
-	public function action_test()
+	public function action_about()
 	{
-		return View::make('home.test')
-		->with('title', '')
-		->with('desc', '')
-		->with('author', '');
+		return View::make('home.about')
+		->with('title', 'About the FLL EM')
+		->with('desc', 'The FLL EM .... Gibberish here');
 	}
 
-	public function action_login()
+	public function action_contact()
 	{
-		return View::make('home.login')
-		->with('title', 'Sign in &middot; '.Config::get('app.name'))
-		->with('desc', '')
-		->with('author', '');
+		return View::make('home.contact')
+		->with('title', 'How can we help you?')
+		->with('desc', 'Contact the event orginizers');
 	}
 
 }

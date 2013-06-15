@@ -32,13 +32,25 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('home.index');
-});
+Route::get('/', 'home@index');
+
+// Route::get('/', function()
+// {
+// 	return View::make('home.index');
+// });
+
+Route::get('login', 'user@login');
+Route::get('about', 'home@about');
+Route::get('contact', 'home@contact');
+
+// Route::get('/login', function()
+// {
+// 	return View::make('home.index');
+// });
 
 Route::controller('home');
 Route::controller('config');
+Route::controller('user');
 
 /*
 |--------------------------------------------------------------------------

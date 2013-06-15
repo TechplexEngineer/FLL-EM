@@ -39,7 +39,7 @@ return array(
 	|
 	*/
 
-	'index' => 'index.php',
+	'index' => '',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -48,12 +48,12 @@ return array(
 	|
 	| This key is used by the encryption and cookie classes to generate secure
 	| encrypted strings and hashes. It is extremely important that this key
-	| remains secret and it should not be shared with anyone. Make it about 32
-	| characters of random gibberish.
+	| remains secret and it should not be shared with anyone. Make it no longer than
+	| 32 characters of random gibberish.
 	|
 	*/
 
-	'key' => 'YourSecretKeyGoesHere!',
+	'key' => 'FLLemL2F66T4C3>r0Ypc',
 
 	/*
 	|--------------------------------------------------------------------------
