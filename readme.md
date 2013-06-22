@@ -3,10 +3,12 @@
 ## Installation
 1. Install
     - Apache
+    	- mod_rewrite
     - MySQL
     - PHP 5+
     - mcrypt and PHP mcrypt extension
-2. ```git clone git://github.com/TechplexEngineer/FLL-EM.git```
+    	- ```$ sudo apt-get install php5-mcrypt && sudo service apache2 restart```
+2. ```$ git clone git://github.com/TechplexEngineer/FLL-EM.git```
 3. On Linux verify that the ```storage/views``` directory is writable.
 
 
