@@ -33,6 +33,14 @@ class Crypter {
 	 */
 	public static function encrypt($value)
 	{
+		if (!function_exists("mcrypt_create_iv"))
+		{
+			$str = "<h1>Error</h1>";
+			$str .= "<p>Have you installed the mcrypt extension?</p>";
+			$str .= "<code>$ sudo apt-get install php5-mcrypt</code>";
+			die($str);
+		}
+			
 		$iv = mcrypt_create_iv(static::iv_size(), static::randomizer());
 
 		$value = static::pad($value);

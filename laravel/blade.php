@@ -60,7 +60,16 @@ class Blade {
 			// Blade representation, writing it to cached storage.
 			if ( ! file_exists($compiled) or Blade::expired($view->view, $view->path))
 			{
-				file_put_contents($compiled, Blade::compile($view));
+				$content = @file_put_contents($compiled, Blade::compile($view));
+				if($content === FALSE)
+				{
+					$str = "<h1>Error</h1>";
+					$str .= "<p>Make sure that the storage directory is writeable by the webserver.</p>";
+					$str .= "<code>$ sudo chmod -R g+w storage</code>";
+					$str .= "<br />";
+					$str .= "<code>$ sudo chgrp -R www-data storage</code>";
+					die($str);
+				}
 			}
 
 			$view->path = $compiled;
