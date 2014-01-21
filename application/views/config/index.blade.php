@@ -15,7 +15,7 @@ echo Form::control_group(
 echo Form::control_group(
   Form::label('fileInput', 'Torunament Data'),
   Form::file('fileInput'), '',
-  Form::block_help('CSV export from Bryan Lee’s Tournament Scheduler')
+  Form::block_help('CSV export from <a target="_blank" href="https://sites.google.com/site/bryansflltools/home">Bryan Lee’s Tournament Scheduler</a>')
 );
 
 echo Form::actions(
